@@ -9,11 +9,9 @@ import play.db.jpa.Model;
 
 @Entity
 public class Trajet extends Model {
-	
-	@Required
+
 	public int idTrajet;
-	
-	@Required
+
 	public float distanceTrajet;
 
 	public Trajet(int idTrajet, float distanceTrajet) {
@@ -21,9 +19,5 @@ public class Trajet extends Model {
 		this.idTrajet = idTrajet;
 		this.distanceTrajet = distanceTrajet;
 	}
-	
-	
-
-	
 
 }
